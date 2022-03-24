@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Is Declawed</th>
+    </tr>
+    <tr *ngFor="let cat of cats">
+        <td>{{ cat.id }}</td>
+        <td>{{ cat.fname }}</td>
+        <td>{{ cat.isDeclawed }}</td>
+    </tr>
+
+</table>
