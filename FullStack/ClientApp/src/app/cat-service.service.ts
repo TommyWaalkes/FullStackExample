@@ -20,6 +20,7 @@ export class CatServiceService {
   }
 
   CreateCat(c: Cat) {
+    console.log(c);
     let fullUrl: string = this.baseUrl + this.endpoint;
     return this.http.put(fullUrl, c);
   }
